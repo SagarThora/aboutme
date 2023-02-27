@@ -1,0 +1,418 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Thambi 2', cursive;
+
+}
+
+
+header {
+    background: none;
+    height: 3px;
+    animation: load 1s ease-in-out 1;
+}
+
+@keyframes load {
+
+    0% {
+        background: black;
+        width: 0vw;
+    }
+
+    50% {
+        background: black;
+        width: 80vw;
+    }
+
+    100% {
+        background: black;
+        width: 100vw;
+    }
+
+}
+
+.f2 {
+    display: none;
+}
+
+.div1 {
+
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'nav nav nav'
+        'S2 S3 S4'
+        'S5 S5 S5'
+        'fo fo fo';
+}
+
+body::before {
+
+    content: "";
+    width: 100%;
+    height: 850px;
+    background: url('bckg.jpg');
+    z-index: -1;
+    position: absolute;
+    margin-top: 0px;
+}
+
+
+.bd {
+    border: 2px solid black;
+    padding: 25px 25px;
+    margin: 15px;
+    text-align: center;
+    justify-content: center;
+    height: 450px;
+    border-radius: 25px;
+}
+
+
+
+.s5 {
+    display: block;
+    height: auto;
+    width: auto;
+}
+
+.bd1 {
+
+    border: 2px solid black;
+    padding: 25px;
+    margin-top: 0px;
+}
+
+.f1 {
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.go {
+
+    margin: 10px;
+}
+
+.bd1 {
+    grid-area: nav;
+}
+
+.s2 {
+
+    grid-area: S2;
+}
+
+
+.s3 {
+    grid-area: S3;
+}
+
+.s4 {
+    grid-area: S4;
+}
+
+
+.s5 {
+
+    grid-area: S5;
+}
+
+.f1 {
+    grid-area: fo;
+
+}
+
+.s1 {
+
+    display: contents;
+    text-align: center;
+    justify-content: center;
+}
+
+.s5 span {
+    display: block;
+    margin: 5px;
+    height: auto;
+    padding-top: 10px;
+
+}
+
+section p {
+    padding: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px) {
+
+
+
+    .div1 {
+        grid-template-areas:
+            'nav nav nav nav'
+            'S2 S2 S2 S2'
+            'S3 S3 S3 S3'
+            'S4 S4 S4 S4'
+            'S5 S5 S5 S5'
+            'fo fo fo fo';
+    }
+
+
+
+    body::before {
+        height: 2000px;
+    }
+
+    .f1 {
+        display: none;
+    }
+
+    .f2 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .f2 span {
+
+        margin: 10px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:230px) {
+
+
+    body {
+
+        font-size: 9px;
+    }
+
+
+
+}
+
+@media only screen and (min-width:230px) and (max-width:280px) {
+
+
+    body {
+
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width:350px) {
+
+
+    body {
+
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width:280px) and (max-width:600px) {
+
+
+    body::before {
+        height: 2200px;
+    }
+
+ 
+
+
+}
+
+@media only screen and (min-width:600px) and (max-width:1100px) {
+
+
+
+    .div1 {
+        grid-template-areas:
+            'nav nav nav nav'
+            'S2 S2 S3 S3'
+            'S4 S4 S4 S4'
+            'S5 S5 S5 S5'
+            'fo fo fo fo';
+    }
+
+    .s4 {
+
+        height: auto;
+
+    }
+
+    body::before {
+        height: 1100px;
+    }
+
+
+
+}
+
+@media only screen and  (min-width:600px)and (max-width:970px) {
+
+
+   
+
+    body::before {
+        height: 1310px;
+    }
+
+
+
+}
+@media only screen and  (min-width:970px)and (max-width:1100px) {
+
+
+   
+
+    body::before {
+        height: 1310px;
+    }
+
+
+
+}
+
+
+@media only screen and  (min-width:0px)and (max-width:1100px) {
+
+
+    .nav1 .brg {
+        display: block;
+        position: fixed;
+
+    }
+
+    .brg .toggled {
+
+        display: block;
+    }
+
+    .nav1 a {
+
+
+        height: 1px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        font-size: 18px;
+
+    }
+
+
+
+    .nav1 a:active {
+
+        background: fixed;
+        border: none;
+
+
+    }
+
+    a:hover {
+
+        border: none;
+
+    }
+
+    header{
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+.nav1 a {
+
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+
+}
+
+
+a:hover {
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+a:active {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.nav1 {
+
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    font-size: 20px;
+    border: none;
+    background-image: url('bckg.jpg');
+}
+
+
+.f1 {
+    margin-top: 25px;
+    border: none;
+}
+
+.brg {
+
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    left: 5%;
+    top: 12px;
+    margin-bottom: 15px;
+
+
+}
+
+.line {
+    text-align: center;
+    width: 30px;
+    background-color: black;
+    height: 5px;
+    margin: 3px auto;
+}
+
+.toggled {
+
+    position: absolute;
+    cursor: pointer;
+    left: 5%;
+    top: 12px;
+    background: none;
+
+}
+
+.toggled a {
+
+    opacity: 0;
+    margin: 10px;
+
+}
